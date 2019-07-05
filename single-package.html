@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Travel</title>
+
+      <link rel="shortcut icon" href="assets/images/.png">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="style1.css">
+
+   </head>
+   <body>
+
+   <div class="container">
+
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel">Request Package</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                       </button>
+                   </div>
+                   <div class="modal-body">
+                       <div class="container-fluid">
+                           <form action="" method="post" onsubmit="return false">
+
+                               <div class="row">
+                                   <div class="form-group col-md-6">
+                                       <input type="text" class="form-control" id="name" placeholder="Name">
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                       <input type="text" class="form-control" id="surname" placeholder="Surname">
+                                   </div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="form-group col-md-6">
+                                       <input type="text" class="form-control" id="cellnumber" placeholder="Cell Number">
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                       <input type="email" class="form-control" id="email" placeholder="Email">
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="form-group col-md-4">
+                                       <input type="text" hidden class="form-control" id="total_amount">
+                                   </div>
+                                   <div class="form-group col-md-4">
+                                       <input type="text" hidden class="form-control" id="period">
+                                   </div>
+                                   <div class="form-group col-md-4">
+                                       <input type="email" hidden class="form-control" id="adults">
+                                   </div>
+
+                               </div>
+
+                           </form>
+
+                       </div>
+                      <div class="modal-footer">
+                         <a href="terms.html"target="_blank">Terms & Conditions</a>
+                         <button type="button" data-dismiss="modal" id="request" class="btn btn-primary ">Submit</button>
+                      </div>
+                       </form>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+
+   </div>
+      <!-- Add Your HTML here -->
+      <header>
+         <div class="header-wrapper">
+            <div class="header-top">
+               <div class="logo">
+                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+               </div>
+               <div class="main-menu-wrapper">
+                  <div class="nav-header">
+                     <div class="hamburger"></div>
+                  </div>
+                  <div class="collapse-nav">
+                     <div class="main-nav">
+                        <ul>
+                           <li onclick="openCity(event, 'Destinations')"><a href="">Travel Destinations</a></li>
+                           <li onclick="openCity(event, 'Experiences')"><a href="">Travel Experiences</a></li>
+                           <li onclick="openCity(event, 'Specials')"><a href="">Travel Deals</a></li>
+                        </ul>
+                     </div>
+                     <div class="user-menu">
+                        <ul>
+                           <li><a href="#">How it works</a></li>
+                           <li class="login"><a href="#">Login</a></li>
+
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="header-bottom">
+               <div class="search-form">
+                  <div class="search-filter">
+                     <div class="single-filter-item">
+                        <ul>
+                           <li>Searh by</li>
+                           <li>
+                              <select name="Experiences" form="">
+                                 <option value="1">Experiences</option>
+                                 <option value="2">Experiences2</option>
+                                 <option value="3">Experiences3</option>
+                                 <option value="4">Experiences4</option>
+                              </select>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="single-filter-item">
+                        <p>My monthly payments</p>
+                        <div class="selary-range">
+                           <div class="drag-range">
+                              <div class="before-range">500</div>
+                              <div class="after-range">5000+</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="single-filter-item">
+                        <p>My payments Over</p>
+                        <div class="selary-range">
+                           <div class="drag-range">
+                              <div class="before-range">3</div>
+                              <div class="after-range">12 months+</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="search-actions">
+                     <div class="pay-condition">
+                        <p>I want to pay R1500 <br>over 6 month </p>
+                     </div>
+                     <div class="search-button">
+                        <input type="submit" value="Search">
+                     </div>
+                  </div>
+               </div>
+            </div> -->
+         </div>
+      </header>
+
+      <section>
+         <div class="banner-section">
+            <div class="package-carousel owl-carousel owl-theme owl-loaded owl-drag">
+               <div class="owl-stage-outer">
+                  <div class="owl-stage" style="transform: translate3d(-2698px, 0px, 0px); transition: all 0s ease 0s; width: 9443px;">
+                     <div class="owl-item cloned" style="width: 1349px;">
+                        <div class="single-package-carousel" style="background-image: url(assets/images/banner3.png);">
+                           <div class="single-package-banner-content">
+                              <p> Travel Destination</p>
+                              <a href="index.html" class="package-banner-btn">Back to Mauritius Destinations</a>
+                           </div>
+                           <div class="review-tag">
+                              <p>SUGAR BEACH RESORT</p>
+                              <div class="star">
+                                 <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="banner-tag">
+                             <!-- <p>From</p>
+                              <h3>21 400 ZAR <span>pps</span></h3>
+                              <p>2,200 ZAR x 6 Months</p>-->
+                           </div>
+                        </div>
+                     </div>
+                     <div class="owl-item cloned" style="width: 1349px;">
+                        <div class="single-package-carousel" style="background-image: url(assets/images/banner2.png);">
+                           <div class="single-package-banner-content">
+                              <p> Travel Destination</p>
+                              <h1>Mauritius</h1>
+                              <a href="#" class="package-banner-btn">Back to Mauritius Destinations</a>
+                           </div>
+                           <div class="review-tag">
+                              <p>SUGAR BEACH RESORT</p>
+                              <div class="star">
+                                 <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="banner-tag">
+                              <p>From</p>
+                              <h3>21 400 ZAR <span>pps</span></h3>
+                              <p>2,200 ZAR x 6 Months</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="owl-item active" style="width: 1349px;">
+                        <featuredImg id="featuredImg"></featuredImg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+
+         <div class="filter-content-wrapper">
+            <!-- <div class="content-head"> -->
+               <!-- <div class="content-helper"> -->
+                  <div class="single-package-filter">
+                     <div class="single-package-filter-left">
+                        <div class="single-package-filter-item">
+                           <h3 class="filter-title">Person</h3>
+                           <select name="person" id="person">
+                              <option value="1">1 Adults</option>
+                              <option value="2">2 Adults</option>
+                              <option value="3">3 Adults</option>
+                              <option value="4">4 Adults</option>
+                           </select>
+                        </div>
+                        <div class="single-package-filter-item">
+                           <h3 class="filter-title">Check-in</h3>
+                           <input type="date">
+                        </div>
+
+
+                        <div class="single-package-filter-item" align="right">
+                           <h3 class="filter-title" >Total</h3>
+                           <h2 class="total-amount" id="">R <span id="rand_price"></span></h2>
+                        </div>
+                     </div>
+
+                  <!--   <div class="or-filter">
+                        <p>OR</p>
+                     </div>-->
+
+                  <div class="single-package-filter-right">
+                     <div class="single-package-filter-item">
+                           <h3 class="filter-title">Payment Period</h3>
+                         <h2 class="total-amount" ><span id="moonths"></span> month(s)</h2>
+                        </div>
+
+                        <div class="single-package-filter-item">
+                           <h3 class="filter-title">Initial Deposit</h3>
+                           <h2 class="total-amount">R <span id="deposit"></span ></h2>
+                        </div>
+
+                        <div class="single-package-filter-item">
+                           <h3 class="filter-title ">Monthly Installment</h3>
+                           <h2 class="total-amount">R <span id="instalment_Monthly"></span ></h2>
+                        </div>
+
+                        <div class="single-package-filter-item">
+                            <button data-toggle="modal" data-target="#exampleModal" id="request-package" class="request-package">Request Package</button>
+                        </div>
+
+
+                  </div>
+
+                  </div>
+               <!-- </div> -->
+            <!-- </div> -->
+         </div>
+      </section>
+
+
+      <section id="single-package-wrapper">
+         <div class="main-content-wrapper">
+            <div class="single-package-inner">
+               <div class="single-package-icons-list">
+                  <ul>
+
+                  </ul>
+               </div>
+
+               <div class="package-row">
+                  <div class="single-package-content">
+                     <p class="Families-traveling-w" id="description"></p>
+                     <h3>Inclusions</h3>
+                     <br>
+                     <p class="Families-traveling-w" id="inclusion"></p>
+
+                  </div>
+
+                  <div class="single-package-video" id="single-package-video">
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section id="destination-carousel-wrapper">
+         <div class="destination-carousel owl-carousel">
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d1.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d2.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d1.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d3.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d2.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d1.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d3.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d2.png" alt="">
+               </a>
+            </div>
+
+            <div class="single-destination-package-item">
+               <a href="#">
+                  <img src="assets/images/d1.png" alt="">
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section id="releted-tag">
+         <div class="releted-tag-inner">
+            <h3 class="section-title">
+               You might also be interested in
+            </h3>
+
+
+            <div class="releted-tag-row">
+               <div class="single-releted-tag-col" style="background-image: url( http://trippi.travel.co.za/siteimgs/Gallery/MUPHOT2Daa08_ss13074.jpg);">
+
+                  <div class="releted-overlay">
+                     <h4 class="releted-tag-title" id="first_name"></h4>
+
+                     <div class="from-tag">
+                        <p>From</p>
+                      R <span id="first_randprice"></span>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class="single-releted-tag-col" style="background-image: url(http://trippi.travel.co.za/siteimgs/Gallery/Autumn-concerto_ss38312.jpg);">
+
+                  <div class="releted-overlay">
+                     <h3 class="releted-tag-title" id="second_name"></h3>
+
+                     <div class="from-tag">
+                        <p>From</p>
+                        R <span id="second_randprice"></span>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class="single-releted-tag-col" style="background-image: url(http://trippi.travel.co.za/siteimgs/Gallery/Entrance_ss37692.jpg);">
+
+                  <div class="releted-overlay">
+                     <h3 class="releted-tag-title" id="third_name"></h3>
+
+                     <div class="from-tag">
+                        <p>From</p>
+                        R <span id="third_randprice"></span>
+
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer>
+         <div class="footer-wrapper">
+            <div class="footer-links">
+               <div class="single-footer-links">
+                  <h3>Popular Experiences</h3>
+                  <ul id="popularexperiences">
+
+
+                  </ul>
+               </div>
+               <div class="single-footer-links">
+                  <h3>Popular Destinations</h3>
+                  <ul id="populardestinations">
+
+                  </ul>
+               </div>
+               <div class="single-footer-links">
+                  <h3>Company</h3>
+                  <ul>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">How it works</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer-tags">
+               <div class="logo">
+                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+               </div>
+               <p>Travel On Layby is the SMARTEST way to book, pay & travel.
+
+                  Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!  </p>
+               <div class="footer-socials">
+                  <ul>
+                     <li>
+                        <a href="https://www.facebook.com/Travel-On-Layby-2364844743788134/" target="_blank"><i class="fa fa-facebook"></i></a>
+                     </li>
+                     <li><a href="https://twitter.com/TLayby" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                     <li><a href="https://www.instagram.com/travelonlayby/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                     <li><a href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <p> ©2019 Travel on Layby   All Rights Reserved   |  <a href="terms.html" target="_blank">Terms & Conditions</a></p>
+         </div>
+      </footer>
+      <script src="assets/js/jquery.slim.js"></script>
+      <script src="assets/js/popper.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+      <script src="assets/js/range_slider.js"></script>
+      <script src="assets/js/global.js"></script>
+      <script src="assets/js/singletrip.js"></script>
+      <script src="assets/js/trips.js"></script>
+
+
+      <script>
+          function goBack() {
+              window.history.back();
+          }
+      </script>
+
+   </body>
+</html>
