@@ -12,39 +12,41 @@
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="mainstyle.css">
+      <link rel="stylesheet" href="assets/css/main.css">
     <!--  <link rel="stylesheet" href="style1.css">-->
 
    </head>
    <body>
       <!-- Add Your HTML here -->
-      <header>
-         <div class="header-wrapper">
-            <div class="header-top">
-               <div class="logo">
-                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-               </div>
-               <div class="main-menu-wrapper">
-                  <div class="nav-header">
-                     <div class="hamburger"></div>
-                  </div>
-                  <div class="collapse-nav">
-                     <div class="main-nav">
-                        <ul>
-                           <li onclick="openCity(event, 'Destinations')"><a href="#Destinations">Travel Destinations</a></li>
-                           <li onclick="openCity(event, 'Experiences')"><a href="#Experiences">Travel Experiences</a></li>
-                           <li onclick="openCity(event, 'Specials')"><a href="#Specials">Travel Deals</a></li>
-                        </ul>
-                     </div>
-                     <div class="user-menu">
-                        <ul>
-                           <li><a href="#">How it works</a></li>
-                           <li class="login"><a href="#">Login</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+      <header class="header header__main">
+
+         <div class="header__top">
+
+            <div class="logo">
+               <a class="logo__link" href="index.html"><img class="logo__img" src="assets/images/logo.png" alt="Travel on Layby"></a>
             </div>
-            <div class="header-bottom">
+
+            <a class="hamburger" href="#"><span class="hamburger__trigger"></span></a>
+            <a href="#" class="filter__icon"><span class="filter__trigger"></span></a>
+            
+            <nav class="primary-nav">
+               <ul class="menu">
+                  <li class="menu__item" onclick="openCity(event, 'Destinations')"><a class="menu__link" href="#Destinations">Travel Destinations</a></li>
+                  <li class="menu__item" onclick="openCity(event, 'Experiences')"><a class="menu__link" href="#Experiences">Travel Experiences</a></li>
+                  <li class="menu__item" onclick="openCity(event, 'Specials')"><a class="menu__link" href="#Specials">Travel Deals</a></li>
+               </ul>
+            </nav>
+
+            <nav class="secondary-nav">
+               <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="#">How it works</a></li>
+                  <li class="menu__item login"><a class="menu__link" href="#">Login</a></li>
+               </ul>
+            </nav>
+
+         </div>
+
+            <div class="header__bottom">
                <div class="search-form">
                   <div class="search-filter">
                      <div class="single-filter-item">
@@ -85,7 +87,7 @@
                   </div>
                </div>
             </div>
-         </div>
+
       </header>
       <section>
 
@@ -104,8 +106,8 @@
             </div>
          </div>
       </section>
-      <section>
-         <div class="main-content-wrapper">
+
+         <main class="main-content-wrapper">
             <div class="content-head">
                <div class="content-helper">
                   <div class="journey-filter-title">
@@ -311,55 +313,51 @@
                   </div>
                </div>
             </div>
-         </div>
-      </section>
-      <footer>
-         <div class="footer-wrapper">
-            <div class="footer-links">
-               <div class="single-footer-links">
-                  <h3>Popular Experiences</h3>
-                  <ul id="popularexperiences">
+         </main>
 
-
-                  </ul>
-               </div>
-               <div class="single-footer-links">
-                  <h3>Popular Destinations</h3>
-                  <ul id="populardestinations">
-
-                  </ul>
-               </div>
-               <div class="single-footer-links">
-                  <h3>Company</h3>
-                  <ul>
-                     <li><a href="#">About Us</a></li>
-                     <li><a href="#">How it works</a></li>
-                     <li><a href="#">Contact Us</a></li>
-                  </ul>
-               </div>
+      <footer class="footer__main">
+         <div class="footer-links">
+            <div class="single-footer-links">
+               <h3>Popular Experiences</h3>
+               <ul id="popularexperiences"></ul>
             </div>
-            <div class="footer-tags">
-               <div class="logo">
-                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-               </div>
-               <p>Travel On Layby is the SMARTEST way to book, pay & travel.
-
-                  Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!  </p>
-               <div class="footer-socials">
-                  <ul>
-                     <li>
-                        <a href="https://www.facebook.com/Travel-On-Layby-2364844743788134/" target="_blank"><i class="fa fa-facebook"></i></a>
-                     </li>
-                     <li><a href="https://twitter.com/TLayby" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                     <li><a href="https://www.instagram.com/travelonlayby/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                     <li><a href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                  </ul>
-               </div>
+            <div class="single-footer-links">
+               <h3>Popular Destinations</h3>
+               <ul id="populardestinations"></ul>
+            </div>
+            <div class="single-footer-links">
+               <h3>Company</h3>
+               <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Contact Us</a></li>
+               </ul>
             </div>
          </div>
+
+         <div class="footer-tags">
+            <div class="logo">
+               <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+            <p>Travel On Layby is the SMARTEST way to book, pay & travel.
+
+               Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!  </p>
+            <div class="footer-socials">
+               <ul>
+                  <li>
+                     <a href="https://www.facebook.com/Travel-On-Layby-2364844743788134/" target="_blank"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li><a href="https://twitter.com/TLayby" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/travelonlayby/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+               </ul>
+            </div>
+         </div>
+
          <div class="footer-copyright">
             <p> ©2019 Travel on Layby   All Rights Reserved   |  <a href="terms.html" target="_blank">Terms & Conditions</a></p>
          </div>
+         
       </footer>
 
       <script src="assets/js/jquery.slim.js"></script>

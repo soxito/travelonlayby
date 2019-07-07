@@ -1,0 +1,34 @@
+
+@import 'colors';
+@import 'typography';
+@import 'spacing';
+@import 'typography';
+@import 'mixins';
+@import 'global';
+@import 'header';
+@import 'footer';
+@import 'helperclasses';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    background: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
