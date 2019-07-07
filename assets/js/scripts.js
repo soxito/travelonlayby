@@ -1,4 +1,4 @@
-// Add Your Scripts here
+
 
 function openCity(evt, cityName) {
   // Declare all variables
@@ -19,43 +19,51 @@ function openCity(evt, cityName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-} 
+}
+
+
 document.getElementById("defaultOpen").click();
+
+var navtop  = 200,
+    primnav = $('.primary-nav'),
+    secnav  = $('.seconday-nav');
 
 $(document).ready(function(){
 
-  $('.menu-item-has-children').on('click', (event) => {
-  $(event.target).siblings('.sub-menu')
-    .toggleClass('active');
-});
+  // Header Scroll up/dowm visibility
 
-  $(document).click(function(e) {
-  $('.menu-item-has-children')
-    .not($('.menu-item-has-children').has($(e.target)))
-    .children('.sub-menu')
-    .removeClass('active');
-});
-
-});
-
-$(window).on('scroll', function() {
-    if($(window).scrollTop() > 200) {
-      $('.header-wrapper').addClass('active');
+  $(window).on('scroll', function(){
+    if($(window).scrollTop() >= 300) {
+      $('.header__main').toggleClass('hide', $(window).scrollTop() >= navtop);
+      navtop = $(window).scrollTop();
     }
-    
+
+    if((primnav).hasClass('is-visible')&&(secnav).hasClass('is-visible')){
+      console.log('primnavscrolling');
+      primnav.removeClass('is-visible');
+      secnav.removeClass('is-visible');
+    }
   });
 
-  $(window).on('scroll', function() {
-    if($(window).scrollTop() < 1) {
-      $('.header-wrapper').removeClass('active');
-    }
-    
+  // Trigger Hamburger animation
+
+  $('.hamburger').click(function(){
+    $('.hamburger__trigger').toggleClass('active');
+    // $('.collapse-nav').toggle('boxopened', 'easeInQuad');
+      $('.collapse-nav').slideToggle("slow");
+
+    $('.primary-nav,.secondary-nav').toggleClass('is-visible');
   });
-$('.nav-header').click(function(){
-              $('.nav-header').toggleClass('active');
-              // $('.collapse-nav').toggle('boxopened', 'easeInQuad');
-                $('.collapse-nav').slideToggle("slow");
-            });
+
+  //Filter Trigger
+
+  $('.filter__icon').click(function(){
+    $('.header__bottom').toggleClass('is-visible');
+  })
+
+});
+
+
 
   // OWL-CAROUSEL
 $('.banner-carousel').owlCarousel({
