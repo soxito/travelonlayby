@@ -21,7 +21,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-
 document.getElementById("defaultOpen").click();
 
 var navtop  = 200,
@@ -37,6 +36,8 @@ $(document).ready(function(){
       $('.header__main').toggleClass('hide', $(window).scrollTop() >= navtop);
       navtop = $(window).scrollTop();
     }
+
+    // toggle diplay of menu on mobile
 
     if((primnav).hasClass('is-visible')&&(secnav).hasClass('is-visible')){
       console.log('primnavscrolling');
