@@ -1,0 +1,12 @@
+
+.content__main {
+    padding-top: var(--space-xl);
+}
+
+@include respond-to('small') {
+
+    .content__main {
+        padding-top: calc(2 * var(--space-xxl));
+    }
+    
+}

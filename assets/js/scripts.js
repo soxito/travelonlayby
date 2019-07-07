@@ -59,7 +59,8 @@ $(document).ready(function(){
   //Filter Trigger
 
   $('.filter__icon').click(function(){
-    $('.header__bottom').toggleClass('is-visible');
+    $('.header__bottom').toggleClass('header__bottom--visible');
+    $('.header-filter__wrapper').toggleClass('header-filter__wrapper--animate');
   })
 
 });
