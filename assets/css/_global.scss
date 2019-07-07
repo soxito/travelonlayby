@@ -1,9 +1,9 @@
 
 .content__main {
-    padding-top: var(--space-xl);
+    padding-top: var(--space-lg);
 }
 
-@include respond-to('small') {
+@include respond-to('medium') {
 
     .content__main {
         padding-top: calc(2 * var(--space-xxl));
