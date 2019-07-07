@@ -17,16 +17,16 @@
     background: linear-gradient(to right,var(--color-primary), var(--color-primary) );
     display: flex;
     flex-direction: column;
-    padding: var(--space-unit) 3rem 0;
+    padding: var(--space-unit) var(--space-md) 0;
     position: relative;
 }
 
 @include respond-to('medium') {
 
     .header__top {
-       
         flex-direction: row;
         align-items: flex-end;
+        padding: var(--space-unit) var(--space-xl) 0;
     }
 }
 
@@ -128,8 +128,8 @@
     position: absolute;
     height: 2rem;
     width: 3rem;
-    top: 1.5rem;
-    right: 3rem;
+    top: var(--space-unit);
+    right: var(--space-md);
 
       
     &__trigger {
@@ -192,8 +192,8 @@
 
 .filter__icon {
     position: absolute;
-    right: 8rem;
-    top: 1.5rem;
+    right: var(--space-xxl);
+    top: var(--space-unit);
 }
 
 .filter__trigger {

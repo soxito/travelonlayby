@@ -96,7 +96,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: var(--space-unit) 3rem 0;
+  padding: var(--space-unit) var(--space-md) 0;
   position: relative;
 }
 
@@ -109,6 +109,7 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    padding: var(--space-unit) var(--space-xl) 0;
   }
 }
 
@@ -194,8 +195,8 @@
   position: absolute;
   height: 2rem;
   width: 3rem;
-  top: 1.5rem;
-  right: 3rem;
+  top: var(--space-unit);
+  right: var(--space-md);
 }
 
 .hamburger__trigger {
@@ -258,8 +259,8 @@
 
 .filter__icon {
   position: absolute;
-  right: 8rem;
-  top: 1.5rem;
+  right: var(--space-xxl);
+  top: var(--space-unit);
 }
 
 .filter__trigger {
