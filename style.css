@@ -18,8 +18,7 @@
 .owl-next {
   right: 50px;
 }
-.owl-nav {
-}
+
 .sub-menu.active li:first-child {
 	border: none;
 }
@@ -334,8 +333,7 @@
   border-right: 1px solid #979797;
   padding-right: 10px;
 }
-.filter-date {
-}
+
 .filter-timing b, .filter-catagory b {
 	float: left;
 	display: block;
@@ -409,8 +407,7 @@
   height: 3px;
   background: #dedddd;
 }
-.drager-line {
-}
+
 .color-line {
   width: 65%;
   margin: auto;
@@ -512,9 +509,7 @@
 .single-destination:hover {
     box-shadow: 0 10px 23px 0 rgba(0, 0, 0, 0.37);
 }
-.share-place:hover {
-    /*box-shadow: 0 10px 23px 0 rgba(0, 0, 0, 0.37);*/
-}
+
 .carousel-container {
     width: 480px;
 }
