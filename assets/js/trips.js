@@ -6,8 +6,8 @@ $(document).ready(function(){
             var image = response[k].image
             var countryname = response[k].countryname
 
-            $('#popularexperiences').append(' <li><a href="#Destinations">'+response[k].countryname+'</a></li>')
-            $('#populardestinations').append(' <li><a href="#Destinations">'+response[k].countryname+'</a></li>')
+            $('#popularexperiences').append(' <li class="list__item"><a class="list__link" href="#Destinations">'+response[k].countryname+'</a></li>')
+            $('#populardestinations').append(' <li class="list"><a class="list__link" href="#Destinations">'+response[k].countryname+'</a></li>')
 
             $('#destinations_block').append(
 
