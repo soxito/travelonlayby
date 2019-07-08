@@ -25,7 +25,11 @@ document.getElementById("defaultOpen").click();
 
 var navtop  = 200,
     primnav = $('.primary-nav'),
-    secnav  = $('.seconday-nav');
+    secnav  = $('.secondary-nav'),
+    mobileTrigger = $('.hamburger__trigger'),
+    filterSec = $('.header__bottom'),
+    filterCont = $('.header-filter__wrapper');
+
 
 $(document).ready(function(){
 
@@ -39,29 +43,52 @@ $(document).ready(function(){
 
     // toggle diplay of menu on mobile
 
-    if((primnav).hasClass('is-visible')&&(secnav).hasClass('is-visible')){
-      console.log('primnavscrolling');
+     if((primnav).hasClass('is-visible')){
       primnav.removeClass('is-visible');
+      mobileTrigger.removeClass('active');
+    }
+
+    if((secnav).hasClass('is-visible')){
       secnav.removeClass('is-visible');
     }
+
+    if(filterSec.hasClass('visible')){
+      console.log($(this));
+      filterSec.removeClass('visible');
+    }
+    
+    if(filterCont.hasClass('animate')){
+      filterCont.removeClass('animate');
+    }
+
   });
 
   // Trigger Hamburger animation
 
-  $('.hamburger').click(function(){
-    $('.hamburger__trigger').toggleClass('active');
-    // $('.collapse-nav').toggle('boxopened', 'easeInQuad');
-      $('.collapse-nav').slideToggle("slow");
-
+  $('.hamburger').click(function(e){
+    e.preventDefault();
+    if(filterSec.hasClass('visible')){
+        filterSec.removeClass('visible');
+    }
+    
+    filterCont.removeClass('animate');
+    mobileTrigger.toggleClass('active');
+    
     $('.primary-nav,.secondary-nav').toggleClass('is-visible');
   });
 
   //Filter Trigger
 
-  $('.filter__icon').click(function(){
-    $('.header__bottom').toggleClass('header__bottom--visible');
-    $('.header-filter__wrapper').toggleClass('header-filter__wrapper--animate');
+  $('.filter__icon').click(function(e){
+    e.preventDefault();
+    primnav.removeClass('is-visible');
+    secnav.removeClass('is-visible');
+    mobileTrigger.removeClass('active');
+    filterSec.toggleClass('visible');
+    filterCont.toggleClass('animate');
   })
+
+  
 
 });
 

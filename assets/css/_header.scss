@@ -201,10 +201,14 @@
 
 .filter__trigger {
     display: block;
-    background: var(--white);
+    background: rgba(0,0,0,.1);
     border-radius: 20px;
     height: 2rem;
     width: 2rem;
+    text-align: center;
+    padding: .5rem;
+    box-sizing: border-box;
+    padding-top: 0.15rem;
 }
 
 @include respond-to('medium'){
@@ -226,7 +230,7 @@
     z-index: 2;
 
 
-    &--visible {
+    &.visible {
         height: 20em;
     }
 }
@@ -243,7 +247,7 @@
     flex-wrap: wrap;
 
 
-    &--animate {
+    &.animate {
         
         transform: translateY(0); 
         opacity: 1;

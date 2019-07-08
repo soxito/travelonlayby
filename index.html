@@ -27,7 +27,7 @@
             </div>
 
             <a class="hamburger" href="#"><span class="hamburger__trigger"></span></a>
-            <a href="#" class="filter__icon"><span class="filter__trigger"></span></a>
+            <a href="#" class="filter__icon"><span class="filter__trigger"><img src="./assets/images/icons/filter.svg" alt=""></span></a>
             
             <nav class="primary-nav">
                <ul class="menu">
@@ -49,19 +49,17 @@
             <div class="header__bottom">
 
                <div class="header-filter__wrapper">
-                  <div class="search-filter">
+
                      <div class="single-filter-item">
-                        <ul>
-                           <li>Search by</li>
-                           <li>
+                        
+                           <label for="">Filter by:</label> 
+                           
                               <select name="Experiences"  style="margin: 2px" form="">
                                  <option value="1">Experiences</option>
                                  <option onclick="openCity(event, 'Destinations')" value="2">Travel Destinations</option>
                                  <option onclick="openCity(event, 'Experiences')" value="3">Travel Experiences</option>
                                  <option onclick="openCity(event, 'Specials')" value="4">Travel Deals</option>
                               </select>
-                           </li>
-                        </ul>
                      </div>
                      <div class="single-filter-item">
                         <p>My Total Spending</p>
@@ -77,7 +75,7 @@
                            <p hidden> <span id="demo1" ></span> Months</p>
                         </div>
                      </div>
-                  </div>
+                 
                   <div class="search-actions">
                      <div class="pay-condition">
                         <p>I want to pay R<span id="monthly_amount">0</span> <br>over <span id="payment_over">3</span> Months </p>
@@ -86,9 +84,8 @@
                         <input onclick="openCity(event, 'Specials')"  type="submit" value="Search">
                      </div>
                   </div>
-               </div>
             </div>
-
+         </div>
       </header>
 
       <main class="content__main">
