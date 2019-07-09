@@ -140,7 +140,7 @@ var apicall =  function (type,endpoint,data,callback){
     $.ajax({
         type: type,
 
-        url: 'https://v1.travelonlayby.com/v1.0/'+ endpoint,
+        url: 'https://laybycafe.com/tolapi/v1.0/'+ endpoint,
 
         headers: {
             'Content-Type': 'application/json'

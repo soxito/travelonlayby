@@ -1,7 +1,6 @@
 .footer {
     
     &__main {
-    background: linear-gradient(to right, #278cd8 49%, #0269b7 88%);
     background: var(--color-accent);
     background: -webkit-linear-gradient(left, var(--color-accent-light), var(--color-accent-dark) 100%);
     background:      -o-linear-gradient(left, var(--color-accent-light), var(--color-accent-dark) 100%);

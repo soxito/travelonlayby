@@ -260,8 +260,10 @@
 
     .header__bottom {
         display: block;
-        padding: var(--space-unit) var(--space-xl);
+        padding: var(--space-unit) 0;
         height: 5.5rem;
+        position: relative;
+
     }
 
     .header-filter__wrapper {
@@ -269,6 +271,8 @@
         transform: translateY(0);
         padding: 0;
         flex-direction: row;
+        position: absolute;
+        padding: 0 var(--space-xl);
     }
 
 }

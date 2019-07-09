@@ -356,8 +356,9 @@
 @media (min-width: 992px) {
   .header__bottom {
     display: block;
-    padding: var(--space-unit) var(--space-xl);
+    padding: var(--space-unit) 0;
     height: 5.5rem;
+    position: relative;
   }
   .header-filter__wrapper {
     opacity: 1;
@@ -368,12 +369,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    position: absolute;
+    padding: 0 var(--space-xl);
   }
 }
 
 .footer__main {
-  background: -webkit-gradient(linear, left top, right top, color-stop(49%, #278cd8), color-stop(88%, #0269b7));
-  background: linear-gradient(to right, #278cd8 49%, #0269b7 88%);
   background: var(--color-accent);
   background: -webkit-gradient(linear, left top, right top, from(var(--color-accent-light)), to(var(--color-accent-dark)));
   background: linear-gradient(to right, var(--color-accent-light), var(--color-accent-dark) 100%);
