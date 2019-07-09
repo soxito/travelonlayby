@@ -44,7 +44,6 @@
 .owl-prev, .owl-next {
 	position: absolute;
 	top: 50%;
-	left: ;
 	transform: translateY(-50%);
 }
 .banner-carousel .owl-prev span, .banner-carousel .owl-next span {
@@ -58,8 +57,7 @@
 .owl-next {
   right: 50px;
 }
-.owl-nav {
-}
+
 .sub-menu.active li:first-child {
 	border: none;
 }
@@ -99,7 +97,6 @@
   width: 10px;
   height: 10px;
   border-left: 4px solid #FFF;
-  border-right: ;
   border-bottom: 4px solid #FFF;
   transform: rotate(-45deg);
   border-top: 4px solid transparent;
@@ -117,7 +114,6 @@
 }
 .sub-menu li:hover {
   background: #FFF;
-  color: ;
 }
 .sub-menu li:hover a {
   color: #FF6000;
@@ -163,7 +159,6 @@
 	padding-left: 50px;
 }
 
-}
 .single-filter-item ul li {
   display: inline-block;
 }
@@ -327,7 +322,6 @@
   font-weight: 300;
 }
 .Tab-title h3:after {
-  position: ;
   content: "";
   position: absolute;
   bottom: -5px;
@@ -374,8 +368,7 @@
   border-right: 1px solid #979797;
   padding-right: 10px;
 }
-.filter-date {
-}
+
 .filter-timing b, .filter-catagory b {
 	float: left;
 	display: block;
@@ -449,8 +442,7 @@
   height: 3px;
   background: #dedddd;
 }
-.drager-line {
-}
+
 .color-line {
   width: 65%;
   margin: auto;
@@ -840,7 +832,6 @@
   font-size: 76px;
   font-weight: bold;
   letter-spacing: -.92px;
-  line-height: ;
   line-height: 88px;
 }
 .package-banner-btn {
@@ -865,7 +856,6 @@
 .star ul li i {
   font-size: 18px;
   display: block;
-  margin-right: ;
 }
 .single-package-filter {
   position: absolute;
@@ -977,7 +967,6 @@
   color: #FFF;
   border-radius: 50%;
   margin-right: 10px;
-  font-size: ;
 }
 .package-row {
   overflow: hidden;
@@ -1041,7 +1030,6 @@
   margin-bottom: 20px;
 }
 .from-tag h2 {
-  text-align: ;
   font-size: 24px;
   font-weight: bold;
   line-height: normal;
@@ -1227,11 +1215,9 @@
   background: #ececec;
   top: -30px;
   position: absolute;
-  top: ;
   border-radius: 50%;
   left: 50%;
   transform: translateX(-50%);
-  border-top: ;
 }
 .payment-progress-dots ul {
   padding-top: 15px;
@@ -1304,7 +1290,6 @@
 }
 .tab-title span {
   display: inline-block;
-  background: ;
   border-bottom: 2px solid linear-gradient(to right, #ff6000 49%, #ff9902 88%);
   position: relative;
   padding-bottom: 2px;
@@ -1342,7 +1327,6 @@ h1.dark {
   color: #000;
   width: 100%;
   border: 1px solid #4f4f4f;
-  padding: ;
   width: 145px;
   height: 47px;
   line-height: 47px;
@@ -1419,8 +1403,7 @@ h1.dark {
 .gellary-overlay.active .view-package-btn{
   top: 50%;
 }
-.overlay-label {
-}
+
 .gellary-overlay.active .overlay-label {
   top: 25%;
 }
