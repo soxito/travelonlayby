@@ -1,0 +1,147 @@
+
+
+
+// Simple name card
+
+.name-card__item {
+    display: block;
+    padding-top: 20em;
+    position: relative;
+    transition: transform 300ms linear;
+    will-change: transform;
+    background-size: cover;
+
+    &:hover {
+    box-shadow: 0 16px 10px -10px rgba(0,0,0,.4);
+    transform: translateY(-5px);
+
+        .overlay {
+            background:rgba(0,0,0,.4);
+            height: 100%;
+            width: 100%;
+
+            &-label {
+                transform: translateY( 1em);
+            }
+        }
+    }
+
+    .overlay {
+        background:rgba(0,0,0,.2);
+        transition: .3s ease-in-out;
+
+        &__label {
+            transition: transform 300ms linear;
+	        will-change: transform;
+            
+        }
+    }
+}
+
+// Info cards
+
+.info-card {
+    border: 1px solid #e3e3e3;
+    transition: .3s ease-in-out;
+    transform: translateY(0);
+
+    .overlay {
+        background: linear-gradient(180deg, rgba(0,0,0,0) 48%, rgba(0,0,0,.7) 100%);
+        transition:   .2s linear;
+    }
+
+    &:hover {
+        box-shadow: 0 1.5em 2em -1em rgba(0,0,0,.2);
+        transform: translateY(-.5em);
+
+        .overlay {
+            background: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%);
+        }
+    }
+
+    &__header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 18em;
+        position: relative; 
+        display: block;
+
+            &__content {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                padding: var(--space-unit);
+                color: var(--white);
+                font-family: var(--font-secondary);
+
+                p {
+                    margin-bottom: .25em;
+                    font-weight: 700;
+                }
+            }
+    }
+
+    &__body {
+        padding: var(--space-unit);
+    }
+
+    &__footer {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+
+        .name-tag {
+            background: #f3f3f3;
+            margin-right: 2px;
+            flex: 1;
+            padding: var(--space-sm) var(--space-unit);
+            font-weight: 700;
+        }
+
+        .share-icon {
+
+            background: #D7D7D7;
+
+        }
+
+    }
+}
+
+
+// tags
+
+.header__tag {
+    display: inline-block;
+    background: linear-gradient(to left, var(--color-primary), var(--color-primary-light));
+    color: var(--white);
+    font-size: .875em;
+    padding: var(--space-sm) var(--space-md); 
+}
+
+
+// view package button position
+
+.info-card, .name-card__item {
+
+    .btn__outline {
+        position: absolute;
+        top: 50%;
+        margin-top: -2em;
+        left: 50%;
+        transform: translateX(-50%) translateY(-2em);
+        opacity: 0; 
+        transition:  .3s linear;
+    }
+
+    &:hover {
+        .btn__outline {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+        
+    }
+}
+
+}

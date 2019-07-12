@@ -1,0 +1,19 @@
+// Full Width Slider
+
+.slider {
+    &--fw {
+        width: 100vw;
+        min-height: 75vh;
+    }
+
+
+
+    &__content {
+            min-height: 75vh;
+        &--1 {
+            background: url('/assets/images/banner2.png');
+            background-position: center;
+            background-size: cover; 
+        }
+    }
+}
