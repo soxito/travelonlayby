@@ -529,13 +529,7 @@
   top: 17px;
   transform: rotate(-45deg);
 }
-.single-destination {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 250px;
-  position: relative;
-}
+
 .overlay {
   background: linear-gradient(to bottom, rgba(0,0,0,.2) 33%, rgba(0,0,0,.6) 72%);
   height: 100%;
@@ -545,13 +539,7 @@
   left: 0;
   top: 0;
 }
-.view-button {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-}
+
 .orrange-tag, .blue-tag {
   width: 130px;
   text-align: center;
@@ -572,42 +560,8 @@
   background: linear-gradient(to right, #278cd8 49%, #0269b7 88%)
 }
 
-.view-button a {
-  position: relative;
-  top: 125%;
-  transform: translateY(-50%);
-  display: inline-block;
-  border: 1px solid #FFF;
-  color: #FFF;
-  font-size: 14px;
-  padding: 8px 25px;
-  transition: 0.4s;
-}
-.view-button span {
-  position: relative;
-  top: 125%;
-  transform: translateY(-50%);
-  display: inline-block;
-  border: 1px solid #FFF;
-  color: #FFF;
-  font-size: 14px;
-  padding: 8px 25px;
-  transition: 0.4s;
-}
-.overlay:hover .view-button a {
-  top: 50%;
-}
-.overlay:hover .view-button span {
-  top: 50%;
-}
-.view-button a:hover {
-  background: linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-  border: navajowhite;
-}
-.view-button span:hover {
-  background: linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-  border: navajowhite;
-}
+
+
 .place-details {
   position: absolute;
   bottom: 10px;
@@ -730,12 +684,7 @@
 .share-place {
 	overflow: hidden;
 }
-.single-destination-item {
-  width: 24%;
-  padding: 8px;
-  display: inline-block;
-  margin-bottom: 25px;
-}
+
 .destination-wrapper {
   background: #FFF;
   border: 1px solid #e8e8e8;
@@ -765,9 +714,7 @@
 	color: #FFF;
 	margin: 0 1px;
 }
-.tab-content {
-	margin-top: 15px;
-}
+
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #FFF;
@@ -775,23 +722,7 @@
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-	background-color: #FFF;
-	color: #000;
-}
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
 
-.tabcontent {
-	animation: fadeEffect 1s;
-	padding: 0;
-	background: #FFF;
-}
 .content-head {
 	background: linear-gradient(to right, #ff6000 38%, #ff9902 65%);
 }
@@ -1073,22 +1004,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-#dashboard .content-head {
-  background: 0 0;
-}
-#dashboard .tab-content {
-  margin-top: 0;
-}
-#dashboard .tab {
-  overflow: hidden;
-  position: relative;
-  padding: 0 100px;
-}
-#dashboard .tab-content {
-  margin-top: 0;
-  position: relative;
-  top: -87px;
-}
+
 .dashboard-title h3 {
   font-size: 24px;
   font-weight: bold;
@@ -1258,9 +1174,7 @@
   z-index: 9;
   height: 100%;
 }
-#dashboard .tab-content-inner {
-  padding-top: 0;
-}
+
 .completed::after {
   content: "\f00c";
   font-family: FontAwesome;
@@ -1276,33 +1190,8 @@
 
 /*=====================landing-page=====================*/
 
-.destinaton-tab-inner {
-  padding: 100px 50px;
-}
-.tab-title {
-  font-size: 46px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: -1.74px;
-  color: #323232;
-}
-.tab-title span {
-  display: inline-block;
-  border-bottom: 2px solid linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-  position: relative;
-  padding-bottom: 2px;
-}
-.tab-title span:after {
-  content: "";
-  background: linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  left: 0;
-}
+
+
 h1.dark {
   font-size: 76px;
   font-weight: bold;
@@ -1312,10 +1201,7 @@ h1.dark {
   letter-spacing: -2.88px;
   margin-top: 35px;
 }
-.tab-view-content {
-  position: relative;
-  padding: 70px 0;
-}
+
 .view-all-btn {
   position: absolute;
   right: 0;
@@ -1349,10 +1235,7 @@ h1.dark {
 .gellary-overlay:hover .view-package-btn a {
     top: 50%;
 }
-.view-button a:hover{
-    background: linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-    border: navajowhite
-}
+
 
 .overlay-label {
   position: relative;
@@ -1474,9 +1357,7 @@ h1.dark {
 .journey-filter-title h2, .help-package h2 {
 	font-size: 30px;
 }
-.tab button {
-	padding: 20px 16px;
-}
+
 .help-package {
 	bottom: -50px;
 }
@@ -1639,9 +1520,7 @@ h1.dark {
   font-size: 45px;
   line-height: 60px;
 }
-.tab-title {
-  font-size: 35px;
-}
+
 }
 
 
@@ -1720,9 +1599,7 @@ h1.dark {
 	left: 15px;
 }
 
-.tab-content-inner {
-	padding-top: 60px;
-}
+
 .banner-content h1 {
 	font-size: 40px;
 }
@@ -1797,9 +1674,7 @@ h1.dark {
 .dashboard-title h3 {
   font-size: 15px;
 }
-#dashboard .tab {
-  padding: 0 50px;
-}
+
 .installment-details {
   min-width: 500px;
   max-width: 500px;
@@ -1883,9 +1758,7 @@ h1.dark {
 .content-helper {
 	padding: 30px 15px;
 }
-.tab {
-	padding: 0 15px;
-}
+
 .help-package {
 	bottom: -50px;
 	right: 45px;
@@ -2137,9 +2010,7 @@ h1.dark {
   width: 325px;
   margin: auto;
 }
-.single-destination-item {
-  width: 48%;
-}
+
 .sharing-icon img {
   height: 50px;
   width: 97%;
@@ -2194,9 +2065,7 @@ h1.dark {
   width: 350px;
   margin: auto;
 }
-.destinaton-tab-inner {
-  padding: 60px 20px;
-}
+
 h1.dark {
   font-size: 36px;
   line-height: 41px;
@@ -2214,11 +2083,7 @@ h1.dark {
 }
 @media(max-width: 575px){
 
-.single-destination-item {
-  width: 320px;
-  margin: auto;
-  margin-bottom: 15px;
-}
+
 
 .owl-prev {
   left: 5px;

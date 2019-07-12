@@ -2,16 +2,16 @@
 
 function openCity(evt, cityName) {
   // Declare all variables
-  var i, tabcontent, tablinks;
+  var i, tabcontentinner, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  // Get all elements with class="tab-content__inner" and hide them
+  tabcontentinner = document.getElementsByClassName("tab-content__inner");
+  for (i = 0; i < tabcontentinner.length; i++) {
+    tabcontentinner[i].style.display = "none";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tab__link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }

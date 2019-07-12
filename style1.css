@@ -529,13 +529,7 @@ p,h1,h2,h3,h4{
   top: 17px;
   transform: rotate(-45deg);
 }
-.single-destination {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 250px;
-  position: relative;
-}
+
 .overlay {
   background: linear-gradient(to bottom, rgba(0,0,0,.2) 33%, rgba(0,0,0,.6) 72%);
   height: 100%;
@@ -545,13 +539,7 @@ p,h1,h2,h3,h4{
   left: 0;
   top: 0;
 }
-.view-button {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-}
+
 .orrange-tag, .blue-tag {
   width: 130px;
   text-align: center;
@@ -572,24 +560,7 @@ p,h1,h2,h3,h4{
   background: linear-gradient(to right, #278cd8 49%, #0269b7 88%)
 }
 
-.view-button a {
-  position: relative;
-  top: 125%;
-  transform: translateY(-50%);
-  display: inline-block;
-  border: 1px solid #FFF;
-  color: #FFF;
-  font-size: 14px;
-  padding: 8px 25px;
-  transition: 0.4s;
-}
-.overlay:hover .view-button a {
-  top: 50%;
-}
-.view-button a:hover {
-  background: linear-gradient(to right, #ff6000 49%, #ff9902 88%);
-  border: navajowhite;
-}
+
 .place-details {
   position: absolute;
   bottom: 10px;
@@ -712,12 +683,7 @@ p,h1,h2,h3,h4{
 .share-place {
 	overflow: hidden;
 }
-.single-destination-item {
-  width: 24%;
-  padding: 8px;
-  display: inline-block;
-  margin-bottom: 25px;
-}
+
 .destination-wrapper {
   background: #FFF;
   border: 1px solid #e8e8e8;
@@ -747,33 +713,10 @@ p,h1,h2,h3,h4{
 	color: #FFF;
 	margin: 0 1px;
 }
-.tab-content {
-	margin-top: 15px;
-}
+
 /* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #FFF;
-  color: #000;
-}
 
-/* Create an active/current tablink class */
-.tab button.active {
-	background-color: #FFF;
-	color: #000;
-}
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-} 
 
-.tabcontent {
-	animation: fadeEffect 1s;
-	padding: 0;
-	background: #FFF;
-}
 .content-head {
 	background: linear-gradient(to right, #ff6000 38%, #ff9902 65%);
 }
@@ -1058,19 +1001,13 @@ p,h1,h2,h3,h4{
 #dashboard .content-head {
   background: 0 0;
 }
-#dashboard .tab-content {
-  margin-top: 0;
-}
+
 #dashboard .tab {
   overflow: hidden;
   position: relative;
   padding: 0 100px;
 }
-#dashboard .tab-content {
-  margin-top: 0;
-  position: relative;
-  top: -87px;
-}
+
 .dashboard-title h3 {
   font-size: 24px;
   font-weight: bold;
@@ -1932,9 +1869,7 @@ p,h1,h2,h3,h4{
   width: 325px;
   margin: auto;
 }
-.single-destination-item {
-  width: 48%;
-}
+
 .sharing-icon img {
   height: 50px;
   width: 97%;
@@ -1992,11 +1927,7 @@ p,h1,h2,h3,h4{
 .header-wrapper.active {
   position: inherit;
 }
-.single-destination-item {
-  width: 320px;
-  margin: auto;
-  margin-bottom: 15px;
-}
+
 
 
 .owl-prev {

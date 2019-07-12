@@ -1,17 +1,2 @@
 
-.content__main {
-    padding-top: var(--space-lg);
-}
 
-@include respond-to('medium') {
-
-    .content__main {
-        padding-top: calc(2 * var(--space-xxl));
-    }
-    
-}
-
-.list--horz {
-    display: flex;
-    flex-direction: row;
-  }

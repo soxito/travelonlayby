@@ -90,250 +90,174 @@
 
       <main class="content__main">
 
-            <section class="banner__home">
+         <section class="banner__home">
 
-               <div class="banner-carousel owl-carousel owl-theme">
+            <div class="banner-carousel owl-carousel owl-theme">
 
-                  <div  class="single-banner-carousel" style="background-image: url(assets/images/banner2.png);">
-                     <div class="banner-content">
-                        <h1>Let’s find your ideal <br>vacation</h1>
-                     </div>
-                     <div class="banner-tag" >
-                        <h3 id="first_carousel"></h3>
-                        <!-- <p>from 6 months x R1978 </p>-->
-                     </div>
+               <div  class="single-banner-carousel" style="background-image: url(assets/images/banner2.png);">
+                  <div class="banner-content">
+                     <h1>Let’s find your ideal <br>vacation</h1>
                   </div>
-      
-               </div>
-
-            </section>
-
-
-         <div class="content-head">
-            <div class="content-helper">
-               <div class="journey-filter-title">
-                  <h2>How do you want to <br> start the journey?</h2>
-               </div>
-               <div class="help-package">
-                  <h2>Looking for a more <br>tailored package?</h2>
-                  <div class="contact-link">
-                     <a href="contact-us.html">Contact Us</a>
+                  <div class="banner-tag" >
+                     <h3 id="first_carousel"></h3>
+                     <!-- <p>from 6 months x R1978 </p>-->
                   </div>
                </div>
+   
             </div>
-            <div class="tab-content">
-               <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'Destinations')" id="defaultOpen">Destinations</button>
-                  <button class="tablinks" onclick="openCity(event, 'Experiences')">Experiences</button>
-                  <button class="tablinks" onclick="openCity(event, 'Specials')" >Specials</button>
+
+         </section>
+
+         <div class="tab-set__wrapper">
+
+            <div class="content__wrapper grid--12">
+
+               <div class="tab-set__component grid__item--8 swap-order--1">
+                     <h2 class="heading-h2--white">How do you want to <br> start the journey?</h2>
+                     <div class="tab__set">
+                           <button class="tab__link" onclick="openCity(event, 'Destinations')" id="defaultOpen">Destinations</button>
+                           <button class="tab__link" onclick="openCity(event, 'Experiences')">Experiences</button>
+                           <button class="tab__link" onclick="openCity(event, 'Specials')" >Specials</button>
+                        </div>
                </div>
+
+               <div class="tab-set__custom grid__item--4 swap-order--2 no-mobile">
+                     <h2 class="heading-h2--white">Looking for a more <br>tailored package?</h2>
+                        <a class="btn__outline" href="contact-us.html">Contact Us</a>
+                     
+                  </div>
+            </div>
+         
+         </div>
 
                <!-- Tab content -->
-               <div id="Destinations" class="tabcontent">
-                  <div class="destinaton-tab-inner">
-                     <div class="tab-extra-header">
-                        <h3 class="tab-title">
-                           Travel <span>Destinations</span>
-                        </h3>
 
-                        <h1 class="dark">
-                           Where Would you <br>like to go?
-                        </h1>
-                     </div>
+         <div class="tab-content">
 
-                     <div class="tab-view-content">
-                     <!-- <div class="view-all-btn">
-                           <button id="scroll-thruogh"> Scroll Throw</button>
-                        </div>-->
+            <div id="Destinations" class="tab-content__inner">
+               
+               <div class="content__wrapper">
+                  
+                  <span class="tab-title">Travel <span>Destinations</span></span>
+                  <h2>Where Would you <br>like to go?</h2>
 
-                        <div class="all-gellary-wrapper">
-
-                           <div class="gellary-flexur row col-lg-12"  id="destinations_block">
-
-                           </div>
-
-                        </div>
-                     </div>
-                  </div>
                </div>
-               <div id="Experiences" class="tabcontent">
-                  <div class="destinaton-tab-inner">
-                     <div class="tab-extra-header">
-                        <h3 class="tab-title">
-                           Travel <span>Experiences</span>
-                        </h3>
+               
+               <div class="content__wrapper">
 
-                        <h1 class="dark">
-                           What are you in the <br> mood for?
-                        </h1>
-                     </div>
+                  <div id="destinations_block" class="grid--12">
 
-                     <div class="tab-view-content">
-                        <div class="view-all-btn">
+                  </div>
+
+               </div>
+            
+            </div>
+
+            <div id="Experiences" class="tab-content__inner">
+
+               <div class="content__wrapper">
+
+                     <spam class="tab-title">Travel <span>Experiences</span></span>
+                     <h2 class="dark">What are you in the <br> mood for?</h2>
+               
+               </div>
+
+               <div class="content__wrapper">
+
+                     <div class="view-all-btn">
                            <a href="experiences-all.html"> View All</a>
+                     </div>
+
+                  <div class="grid--12">
+
+                     <div class="grid__item">
+                           
+                        <div class="name-card__item" style="background-image: url(assets/images/v10.png)">
+                           <div class="overlay">
+                              <div class="overlay-label">Ski holiday</div>
+                              <a href="#" class="btn__outline" onclick="openCity(event, 'Specials')" >View Package</a>
+                           </div>
                         </div>
 
-                        <div class="all-gellary-wrapper">
+                     </div>
 
-                           <div class="gellary-flexur" >
-                              <a onclick="openCity(event, 'Specials')">
-                                 <div  class="single-all-gellary-item" style="background-image: url(assets/images/v10.png);">
-                                    <div class="gellary-overlay">
-                                       <div class="overlay-label">Ski holiday</div>
-                                       <div class="view-package-btn">
-                                          <a href="#">View Package</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-
+                     <div class="grid__item">
+                           
+                           <div class="name-card__item" style="background-image: url(assets/images/v9.png)">
+                              <div class="overlay">
+                                 <div class="overlay-label">Beach break away</div>
+                                 <a href="#" class="btn__outline" onclick="openCity(event, 'Specials')" >View Package</a>
+                              </div>
                            </div>
+   
+                        </div>
 
-                           <div class="gellary-flexur">
-                              <a onclick="openCity(event, 'Specials')">
-                                 <div class="single-all-gellary-item" style="background-image: url(assets/images/v9.png);">
-                                    <div class="gellary-overlay">
-                                       <div class="overlay-label">Beach break away</div>
-                                       <div class="view-package-btn">
-                                          <a href="#">View Package</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-                           <div class="gellary-flexur">
-                              <a onclick="openCity(event, 'Specials')">
-                                 <div class="single-all-gellary-item" style="background-image: url(assets/images/v8.png);">
-                                    <div class="gellary-overlay">
-                                       <div class="overlay-label">Cruise the Seas</div>
-                                       <div class="view-package-btn">
-                                          <a href="#">View Package</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </a>
-                           </div>
-
-                           <div class="gellary-flexur">
-                              <div class="single-all-gellary-item" style="background-image: url(assets/images/v8.png);">
-                                 <div class="gellary-overlay">
+                        <div class="grid__item">
+                           
+                              <div class="name-card__item" style="background-image: url(assets/images/v8.png)">
+                                 <div class="overlay">
                                     <div class="overlay-label">Cruise the Seas</div>
-                                    <div class="view-package-btn">
-                                       <a href="#">View Package</a>
+                                    <a href="#" class="btn__outline" onclick="openCity(event, 'Specials')" >View Package</a>
+                                 </div>
+                              </div>
+      
+                           </div>
+
+                           <div class="grid__item">
+                           
+                                 <div class="name-card__item" style="background-image: url(assets/images/v10.png)">
+                                    <div class="overlay">
+                                       <div class="overlay-label">Ski holiday</div>
+                                       <a href="#" class="btn__outline" onclick="openCity(event, 'Specials')" >View Package</a>
                                     </div>
                                  </div>
-                              </div>
+         
                            </div>
-
-
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div id="Specials" class="tabcontent">
-
-                  <div class="tab-content-inner">
-                     <div class="Tab-title">
-                        <h3>Travel Deals</h3>
-                     </div>
-                     <!--Filtering....-->
-                     <div class="filer-by">
-                        <p>Filter by :</p>
-                        <div class="filter-items">
-                           <div class="filter-timing">
-                              <b>When</b>
-                              <div class="single-filter-time from">
-                                 <div class="filter-icon">
-                                    <i class="fa fa-calendar"></i>
-                                 </div>
-                                 <div class="filter-date">
-                                    <input type="date" placeholder="2019/05/25">
-                                 </div>
-                              </div>
-                              <div class="single-filter-time to">
-                                 <div class="filter-icon">
-                                    <i class="fa fa-calendar"></i>
-                                 </div>
-                                 <div class="filter-date">
-                                    <input type="date" placeholder="2019/05/25">
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="filter-catagory">
-                              <b>Category</b>
-                              <div class="single-input-category">
-                                 <select name="category" id="">
-                                    <option value="1">All</option>
-                                    <option value="2">Travel Destination</option>
-                                    <option value="3">Travel Experience</option>
-                                    <option value="4">Specials</option>
-                                 </select>
-                                 <div class="add-category">
-                                    +
-                                 </div>
-                              </div>
-
-                           </div>
-                        </div>
-                        <div class="payment-items">
-                           <div class="monthly-payament">
-                              <b>Payment(monthly)</b>
-                              <div id="slider-range"></div>
-
-                              <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                           </div>
-                           <div class="payment-separetor">
-                              <p>-Over-</p>
-                           </div>
-                           <div class="payment-period">
-                              <b>Period(months)</b>
-                              <div class="selary-range">
-                                 <input  type="range" min="3" max="12" value="3" step="3" id="myRange2">
-                                 <p><span id="demo2"></span> Months</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="main-filter-items">
-                        <!--<div class="show-btn">
-                           <b>Show:</b>
-                              <div class="show-wrapper">
-                                 <select name="show" id="show">
-                                    <option value="1">20</option>
-                                    <option value="2">30</option>
-                                    <option value="3">40</option>
-                                    <option value="4">50</option>
-                                 </select>
-                              </div>
-                        </div>-->
-                        <div class="destination-items row col-lg-12" id="trip_block"></div>
-
-                     </div>
                   </div>
                </div>
             </div>
+
+            <div id="Specials" class="tab-content__inner">
+
+               <div class="content__wrapper">
+
+                     <h2>Travel Deals</h2>
+
+               </div>
+               
+               <div class="content__wrapper">
+
+                  <div id="trip_block" class="grid--12">
+
+                  </div>
+
+               </div>      
+
+            </div>
+
          </div>
+
       </main>
 
       <footer class="footer__main">
+        
+                <div class="content__wrapper">
 
-            <div class="container">
+                  <div class="grid--12">
         
-                <div class="content__wrapper padding-tb-small ">
-        
-                  <div class="content__inner footer__widget widget__20">
+                  <div class="content__inner footer__widget widget--1">
                     <h4 class="heading__h4 text--white">Popular Experiences</h4>
                     <ul id="popularexperiences" class="list list__footer">
 
                     </ul>
                   </div>
-                  <div class="content__inner footer__widget widget__20">
+                  <div class="content__inner footer__widget widget--2">
                     <h4 class="heading__h4 text--white">Porpular Destinations</h4>
                     <ul id="populardestinations" class="list list__footer" >
 
                     </ul>
                   </div>
-                  <div class="content__inner footer__widget widget__20">
+                  <div class="content__inner footer__widget widget--3">
                     <h4 class="heading__h4 text--white">Company</h4>
                     <ul class="list list__footer">
                       <li class="list__item"><a href="" class="list__link">About</a></li>
@@ -342,7 +266,7 @@
                       <li class="list__item"><a href="" class="list__link">Contact Us</a></li>
                     </ul>
                   </div>
-                  <div class="content__inner footer__widget widget__30">
+                  <div class="content__inner footer__widget widget--4">
                     <img class="footer__logo" src="assets/images/logo.png" alt="Travel on Layby">
                     <p>Travel On Layby is the SMARTEST way to book, pay & travel.<br>
                         Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!</p>
@@ -353,10 +277,10 @@
                       <li class="list__item"><a class="list__link" href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                   </div>
+
+               </div>
                     
                 </div>
-              
-            </div>
         
             <div class="socket">
               <p>©Copyright 2019 Travel on Layby All Rights Reserved | <a href="terms.html">Terms and Conditions</a></p>

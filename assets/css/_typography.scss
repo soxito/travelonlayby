@@ -6,3 +6,28 @@
     --text-base-size: 1em;
     --text-scale-ratio: 1.2;
 }
+
+
+
+.heading-h2--white {
+    color: white;
+    font-family: var(--font-secondary);
+    line-height: 1.25em;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+@include respond-to('medium') {
+
+    .heading-h2--white {
+        font-size: 1.75em;
+    }
+}
+
+@include respond-to('large') {
+    .heading-h2--white {
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+}

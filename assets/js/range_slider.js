@@ -300,47 +300,46 @@ if(isEmpty(getUrlParameter('countryname'))===false){
                         var datePaid=''
 
 
-                        $('#trip_block').append('<div class="trip-block col-md-3">\n' +
-                            '                                  <a  href="single-package.html?id='+item_id+'" target="_blank">  <div class="single-destination" style="background-image: url('+image+');">\n' +
-                            '                                       <div class="overlay">\n' +
-                            '                                          <div class="view-button">\n' +
-                            '                                             <span>View Details</span>\n' +
-                            '                                          </div>\n' +
-                            '                                          <div class="place-details">\n' +
-                            '                                             <h3 >'+item_name+'</h3>\n' +
-                            '                                             <div>'+getStars(response.data[i].destinations.hotelrating)+'\n' +
-                            '                                             </div>\n' +
-                            '                                          </div>\n' +
-                            '                                          <div class="orrange-tag">\n' +
-                            '                                             <p>Destination</p>\n' +
-                            '                                          </div>\n' +
-                            '                                       </div>\n' +
-                            '                                    </div></a>\n' +
-                            '                                    <div class="place-booking-details">\n' +
-                            '                                       <p>from</p>\n' +
-                            '                                       <div class="booking-items">\n' +
-                            '                                          <div class="single-booking-item">\n' +
-                            '                                           <p><span>R'+instalment.toFixed(2)+'</span> x '+instalmentMonths+'</p>\n' +
-                            '                                          </div>\n' +
-                            '                                          <div class="single-booking-item">\n' +
-                            '                                             <div class="single-night">\n' +
-                            '                                                <i class="fa fa-calendar"></i>'+nights+' nights\n' +
-                            '                                             </div>\n' +
-                            '                                             <div class="single-clock">\n' +
-                            '                                                <i class="fa fa-hourglass-half"></i>Self Catering\n' +
-                            '                                             </div>\n' +
-                            '                                          </div>\n' +
-                            '                                       </div>\n' +
-                            '                                    </div>\n' +
-                            '                                    <div class="share-place">\n' +
-                            '                                       <div class="sharing-place-name">\n' +
-                            '                                          <h3>'+countryname+'</h3>\n' +
-                            '                                       </div>\n' +
-                            '                                       <div class="sharing-icon">\n' +
-                            '                                      <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftravelonlayby.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="assets/images/share.png" alt=""></a>\n' +
-                            '                                       </div>\n' +
-                            '                                    </div>\n' +
-                            '                                 </div>');
+                        $('#trip_block').append('<div class="grid__item">\n' +
+                        '                           <article class="info-card">\n' +
+                        '                                 <div class="info-card__header" style="background-image: url('+image+');">\n' +   
+                                                     
+                        '                                       <div class="overlay">\n' +
+                        '                                          <a class="btn__outline" href="single-package.html?id='+item_id+'" target="_blank">View Package</a>\n' +
+                        '                                          <div class="info-card__header__content">\n' +
+                        '                                             <p class="">'+item_name+'</p>\n' +
+                        '                                             <div>'+getStars(response.product[i].destinations.hotelrating)+'\n' +
+                        '                                             </div>\n' +
+                        '                                          </div>\n' +
+                        '                                          <span class="header__tag">Destination</span>\n' +
+                        '                                       </div>\n' +
+                                                         
+                        '                                   </div>\n' +
+        
+                        '                                    <div class="info-card__body">\n' +
+                        '                                       <p>from</p>\n' +
+                        '                                       <div class="booking-items">\n' +
+                        '                                          <div class="single-booking-item">\n' +
+                        '                                           <p><span>R'+instalment.toFixed(2)+'</span> x '+instalmentMonths+'</p>\n' +
+                        '                                          </div>\n' +
+                        '                                          <div class="single-booking-item">\n' +
+                        '                                             <div class="single-night">\n' +
+                        '                                                <i class="fa fa-calendar"></i>'+nights+' nights\n' +
+                        '                                             </div>\n' +
+                        '                                             <div class="single-clock">\n' +
+                        '                                                <i class="fa fa-hourglass-half"></i>Self Catering\n' +
+                        '                                             </div>\n' +
+                        '                                          </div>\n' +
+                        '                                       </div>\n' +
+                        '                                    </div>\n' +
+                        '                                    <div class="info-card__footer">\n' +
+                        '                                       <span class="name-tag">'+countryname+'</span>\n' +
+                        '                                       <div class="share-icon">\n' +
+                        '                                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftravelonlayby.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="assets/images/share.png" alt=""></a>\n' +
+                        '                                       </div>\n' +
+                        '                                    </div>\n' +
+                        '                                   </div>\n' +
+                        '                               </article>');
 
 
 
@@ -425,47 +424,46 @@ else{
 
 
 
-                    $('#trip_block').append('<div class="trip-block col-md-3">\n' +
-                        '                                    <a href="single-package.html?id='+item_id+'" target="_blank"> <div class="single-destination" style="background-image: url('+image+');">\n' +
-                        '                                       <div class="overlay">\n' +
-                        '                                          <div class="view-button">\n' +
-                        '                                             <span >View Details</span>\n' +
-                        '                                          </div>\n' +
-                        '                                          <div class="place-details">\n' +
-                        '                                             <h3 >'+item_name+'</h3>\n' +
-                        '                                             <div>'+getStars(response.data[i].destinations.hotelrating)+'\n' +
-                        '                                             </div>\n' +
-                        '                                          </div>\n' +
-                        '                                          <div class="orrange-tag">\n' +
-                        '                                             <p>Destination</p>\n' +
-                        '                                          </div>\n' +
-                        '                                       </div>\n' +
-                        '                                    </div></a>\n' +
-                        '                                    <div class="place-booking-details">\n' +
-                        '                                       <p>from</p>\n' +
-                        '                                       <div class="booking-items">\n' +
-                        '                                          <div class="single-booking-item">\n' +
-                        '                                             <p><span>R'+instalment.toFixed(2)+'</span> x '+instalmentMonths+' months </p>\n' +
-                        '                                          </div>\n' +
-                        '                                          <div class="single-booking-item">\n' +
-                        '                                             <div class="single-night">\n' +
-                        '                                                <i class="fa fa-calendar"></i>'+nights+' nights\n' +
-                        '                                             </div>\n' +
-                        '                                             <div class="single-clock">\n' +
-                        '                                                <i class="fa fa-hourglass-half"></i>Self Catering\n' +
-                        '                                             </div>\n' +
-                        '                                          </div>\n' +
-                        '                                       </div>\n' +
-                        '                                    </div>\n' +
-                        '                                    <div class="share-place">\n' +
-                        '                                       <div class="sharing-place-name">\n' +
-                        '                                          <h3>'+countryname+'</h3>\n' +
-                        '                                       </div>\n' +
-                        '                                       <div class="sharing-icon">\n' +
-                        '                                        <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftravelonlayby.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="assets/images/share.png" alt=""></a>\\n\' +\n' +
-                        '                                       </div>\n' +
-                        '                                    </div>\n' +
-                        '                                 </div>');
+                    $('#trip_block').append('<div class="grid__item">\n' +
+                    '                           <article class="info-card">\n' +
+                    '                                 <div class="info-card__header" style="background-image: url('+image+');">\n' +   
+                                                 
+                    '                                       <div class="overlay">\n' +
+                    '                                          <a class="btn__outline" href="single-package.html?id='+item_id+'" target="_blank">View Package</a>\n' +
+                    '                                          <div class="info-card__header__content">\n' +
+                    '                                             <p class="">'+item_name+'</p>\n' +
+                    '                                             <div>'+getStars(response.product[i].destinations.hotelrating)+'\n' +
+                    '                                             </div>\n' +
+                    '                                          </div>\n' +
+                    '                                          <span class="header__tag">Destination</span>\n' +
+                    '                                       </div>\n' +
+                                                     
+                    '                                   </div>\n' +
+    
+                    '                                    <div class="info-card__body">\n' +
+                    '                                       <p>from</p>\n' +
+                    '                                       <div class="booking-items">\n' +
+                    '                                          <div class="single-booking-item">\n' +
+                    '                                           <p><span>R'+instalment.toFixed(2)+'</span> x '+instalmentMonths+'</p>\n' +
+                    '                                          </div>\n' +
+                    '                                          <div class="single-booking-item">\n' +
+                    '                                             <div class="single-night">\n' +
+                    '                                                <i class="fa fa-calendar"></i>'+nights+' nights\n' +
+                    '                                             </div>\n' +
+                    '                                             <div class="single-clock">\n' +
+                    '                                                <i class="fa fa-hourglass-half"></i>Self Catering\n' +
+                    '                                             </div>\n' +
+                    '                                          </div>\n' +
+                    '                                       </div>\n' +
+                    '                                    </div>\n' +
+                    '                                    <div class="info-card__footer">\n' +
+                    '                                       <span class="name-tag">'+countryname+'</span>\n' +
+                    '                                       <div class="share-icon">\n' +
+                    '                                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftravelonlayby.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src="assets/images/share.png" alt=""></a>\n' +
+                    '                                       </div>\n' +
+                    '                                    </div>\n' +
+                    '                                   </div>\n' +
+                    '                               </article>');
 
 
 

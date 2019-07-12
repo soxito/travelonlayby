@@ -1,2 +1,30 @@
 .is-visible { display: block !important; }
 .is-hidden { display: none; }
+
+.list--horz {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .swap-order--1 { order: 2}
+  .swap-order--2 { order :1}
+
+  @include respond-to(medium) {
+    .swap-order--1 { order: 1}
+    .swap-order--2 { order :2}
+  }
+
+
+  .no-mobile {
+    display: none;
+  }
+
+  @include respond-to(medium) {
+    .no-mobile {
+      display: block;
+    }
+  }
+
+ 
+  

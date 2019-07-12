@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="assets/css/font-awesome.min.css">
       <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
       <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" href="assets/css/main.css">
 
    </head>
    <body>
@@ -77,81 +78,34 @@
 
    </div>
       <!-- Add Your HTML here -->
-      <header>
-         <div class="header-wrapper">
-            <div class="header-top">
-               <div class="logo">
-                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-               </div>
-               <div class="main-menu-wrapper">
-                  <div class="nav-header">
-                     <div class="hamburger"></div>
-                  </div>
-                  <div class="collapse-nav">
-                     <div class="main-nav">
-                        <ul>
-                           <li onclick="openCity(event, 'Destinations')"><a href="">Travel Destinations</a></li>
-                           <li onclick="openCity(event, 'Experiences')"><a href="">Travel Experiences</a></li>
-                           <li onclick="openCity(event, 'Specials')"><a href="">Travel Deals</a></li>
-                        </ul>
-                     </div>
-                     <div class="user-menu">
-                        <ul>
-                           <li><a href="#">How it works</a></li>
-                           <li class="login"><a href="#">Login</a></li>
+      <header class="header header__main">
 
-                        </ul>
-                     </div>
-                  </div>
+            <div class="header__top">
+   
+               <div class="logo">
+                  <a class="logo__link" href="index.html"><img class="logo__img" src="assets/images/logo.png" alt="Travel on Layby"></a>
                </div>
+   
+               <a class="hamburger" href="#"><span class="hamburger__trigger"></span></a>
+               <a href="#" class="filter__icon"><span class="filter__trigger"><img src="./assets/images/icons/filter.svg" alt=""></span></a>
+               
+               <nav class="primary-nav">
+                  <ul class="menu">
+                     <li class="menu__item" onclick="openCity(event, 'Destinations')"><a class="menu__link" href="#Destinations">Travel Destinations</a></li>
+                     <li class="menu__item" onclick="openCity(event, 'Experiences')"><a class="menu__link" href="#Experiences">Travel Experiences</a></li>
+                     <li class="menu__item" onclick="openCity(event, 'Specials')"><a class="menu__link" href="#Specials">Travel Deals</a></li>
+                  </ul>
+               </nav>
+   
+               <nav class="secondary-nav">
+                  <ul class="menu">
+                     <li class="menu__item"><a class="menu__link" href="#">How it works</a></li>
+                     <li class="menu__item login"><a class="menu__link" href="#">Login</a></li>
+                  </ul>
+               </nav>
+   
             </div>
-            <!-- <div class="header-bottom">
-               <div class="search-form">
-                  <div class="search-filter">
-                     <div class="single-filter-item">
-                        <ul>
-                           <li>Searh by</li>
-                           <li>
-                              <select name="Experiences" form="">
-                                 <option value="1">Experiences</option>
-                                 <option value="2">Experiences2</option>
-                                 <option value="3">Experiences3</option>
-                                 <option value="4">Experiences4</option>
-                              </select>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="single-filter-item">
-                        <p>My monthly payments</p>
-                        <div class="selary-range">
-                           <div class="drag-range">
-                              <div class="before-range">500</div>
-                              <div class="after-range">5000+</div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="single-filter-item">
-                        <p>My payments Over</p>
-                        <div class="selary-range">
-                           <div class="drag-range">
-                              <div class="before-range">3</div>
-                              <div class="after-range">12 months+</div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="search-actions">
-                     <div class="pay-condition">
-                        <p>I want to pay R1500 <br>over 6 month </p>
-                     </div>
-                     <div class="search-button">
-                        <input type="submit" value="Search">
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-         </div>
-      </header>
+         </header>
 
       <section>
          <div class="banner-section">
@@ -415,53 +369,53 @@
          </div>
       </section>
 
-      <footer>
-         <div class="footer-wrapper">
-            <div class="footer-links">
-               <div class="single-footer-links">
-                  <h3>Popular Experiences</h3>
-                  <ul id="popularexperiences">
+      <footer class="footer__main">
+        
+            <div class="content__wrapper">
 
+              <div class="grid--12">
+    
+              <div class="content__inner footer__widget widget--1">
+                <h4 class="heading__h4 text--white">Popular Experiences</h4>
+                <ul id="popularexperiences" class="list list__footer">
 
-                  </ul>
-               </div>
-               <div class="single-footer-links">
-                  <h3>Popular Destinations</h3>
-                  <ul id="populardestinations">
+                </ul>
+              </div>
+              <div class="content__inner footer__widget widget--2">
+                <h4 class="heading__h4 text--white">Porpular Destinations</h4>
+                <ul id="populardestinations" class="list list__footer" >
 
-                  </ul>
-               </div>
-               <div class="single-footer-links">
-                  <h3>Company</h3>
-                  <ul>
-                     <li><a href="#">About Us</a></li>
-                     <li><a href="#">How it works</a></li>
-                     <li><a href="#">Contact Us</a></li>
-                  </ul>
-               </div>
+                </ul>
+              </div>
+              <div class="content__inner footer__widget widget--3">
+                <h4 class="heading__h4 text--white">Company</h4>
+                <ul class="list list__footer">
+                  <li class="list__item"><a href="" class="list__link">About</a></li>
+                  <li class="list__item"><a href="" class="list__link">How it works</a></li>
+                  <li class="list__item"><a href="" class="list__link">FAQ's</a></li>
+                  <li class="list__item"><a href="" class="list__link">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="content__inner footer__widget widget--4">
+                <img class="footer__logo" src="assets/images/logo.png" alt="Travel on Layby">
+                <p>Travel On Layby is the SMARTEST way to book, pay & travel.<br>
+                    Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!</p>
+                <ul class="list list--horz list__social">
+                  <li class="list__item"><a class="list__link" href="https://www.facebook.com/Travel-On-Layby-2364844743788134/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list__item"><a class="list__link" href="https://twitter.com/TLayby" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list__item"><a class="list__link" href="https://www.instagram.com/travelonlayby/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list__item"><a class="list__link" href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+              </div>
+
+           </div>
+                
             </div>
-            <div class="footer-tags">
-               <div class="logo">
-                  <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
-               </div>
-               <p>Travel On Layby is the SMARTEST way to book, pay & travel.
-
-                  Easy payments with no hidden fees & no interest, means holidays & travel is now for EVERYONE!  </p>
-               <div class="footer-socials">
-                  <ul>
-                     <li>
-                        <a href="https://www.facebook.com/Travel-On-Layby-2364844743788134/" target="_blank"><i class="fa fa-facebook"></i></a>
-                     </li>
-                     <li><a href="https://twitter.com/TLayby" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                     <li><a href="https://www.instagram.com/travelonlayby/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                     <li><a href="https://www.youtube.com/channel/UCec6MdtnGzcNQixsb_G27WQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="footer-copyright">
-            <p> ©2019 Travel on Layby   All Rights Reserved   |  <a href="terms.html" target="_blank">Terms & Conditions</a></p>
-         </div>
+    
+        <div class="socket">
+          <p>©Copyright 2019 Travel on Layby All Rights Reserved | <a href="terms.html">Terms and Conditions</a></p>
+        </div>
+    
       </footer>
       <script src="assets/js/jquery.slim.js"></script>
       <script src="assets/js/popper.js"></script>
